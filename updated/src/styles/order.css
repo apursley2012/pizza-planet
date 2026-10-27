@@ -1,0 +1,772 @@
+/*
+  +----------------------------------------------------------------------------+
+  | Pizza Planet Ordering Chatbot                                              |
+  | Purpose: Owns styles unique to the ordering page, including the hero, chat |
+  | interface, live receipt, and order-page responsive behavior.               |
+  | Author: Alysha Pursley                                                     |
+  | Copyright (c) 2026 Alysha Pursley.                                         |
+  +----------------------------------------------------------------------------+
+*/
+
+/* Receipt labels shared by the live ticket sections */
+
+.receipt-section-label {
+	font-size: .7rem;
+	font-weight: 800;
+	letter-spacing: .2em;
+	color: var(--slate-gray);
+}
+
+/* The opening brand block remains independent of the red ordering introduction. */
+.logo-hero {
+	background: var(--brand-hero-gray);
+	border-bottom: 3px solid var(--ink-black);
+}
+
+.logo-hero-inner {
+	min-height: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: .75rem;
+	padding: clamp(1.5rem, 3vw, 2.25rem) 1rem;
+	text-align: center;
+}
+
+.logo-hero-image {
+	display: block;
+	width: min(78vw, 520px);
+	height: auto;
+	max-height: none;
+	object-fit: contain;
+	filter: drop-shadow(5px 6px 0 var(--fog-gray));
+}
+
+.logo-hero-title {
+	width: min(95%, 1000px);
+	margin: 0;
+	line-height: 1;
+}
+
+.brand-wordmark-hero {
+	width: 100%;
+}
+
+/* The red ordering introduction follows the brand section. */
+.order-intro {
+	background: var(--cherry-red);
+	border-bottom: 3px solid var(--ink-black);
+}
+
+.order-intro-grid {
+	display: grid;
+	grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
+	gap: 2rem;
+	align-items: center;
+	padding: 3.5rem 0;
+}
+
+.badge {
+	display: inline-flex;
+	align-items: center;
+	gap: .65rem;
+	background: var(--pizza-yellow);
+	border: 3px solid var(--ink-black);
+	border-radius: 999px;
+	padding: .38rem 1rem;
+	font-size: .7rem;
+	font-weight: 800;
+	text-transform: uppercase;
+	letter-spacing: .18em;
+	box-shadow: 3px 3px 0 var(--ink-black);
+}
+
+.order-intro h2 {
+	font-size: 3.7rem;
+	line-height: 1.05;
+	color: var(--cool-white);
+	margin: 1.25rem 0 0;
+}
+
+.order-intro h2 span {
+	display: block;
+	color: var(--pizza-yellow);
+}
+
+.order-intro p {
+	max-width: 42rem;
+	color: var(--ice-gray);
+	font-size: 1.08rem;
+	line-height: 1.65;
+	font-weight: 600;
+}
+
+.hero-img {
+	width: 100%;
+	max-width: 390px;
+	border-radius: 50%;
+	border: 3px solid var(--ink-black);
+	box-shadow: 9px 9px 0 var(--ink-black);
+}
+
+/* Order counter and conversation */
+
+.order-grid {
+	display: grid;
+	grid-template-columns: minmax(0, 1fr) 380px;
+	gap: 2rem;
+	padding: 3.5rem 0;
+}
+
+.chat-card {
+	min-height: 560px;
+	border: 3px solid var(--ink-black);
+	border-radius: 24px;
+	overflow: hidden;
+	background: var(--pure-white);
+	box-shadow: 9px 9px 0 var(--ink-black);
+	display: flex;
+	flex-direction: column;
+}
+
+.chat-head {
+	background: var(--ink-black);
+	color: var(--ice-gray);
+	padding: 1rem 1.25rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.chat-head h2 {
+	margin: 0;
+	font-size: 1.15rem;
+}
+
+.chat-head small {
+	color: var(--fog-gray);
+	font-weight: 800;
+	text-transform: uppercase;
+	letter-spacing: .12em;
+}
+
+.thread {
+	flex: 1;
+	background: var(--soft-gray);
+	padding: 1.25rem;
+	overflow: auto;
+	min-height: 380px;
+}
+
+.bubble {
+	max-width: 82%;
+	border: 3px solid var(--ink-black);
+	border-radius: 18px;
+	padding: .8rem 1rem;
+	margin: .7rem 0;
+	font-weight: 700;
+	box-shadow: 3px 3px 0 var(--ink-black);
+}
+
+.bubble.bot {
+	background: var(--pure-white);
+}
+
+.bubble.user {
+	background: var(--pizza-red);
+	color: var(--pure-white);
+	margin-left: auto;
+}
+
+.composer {
+	border-top: 3px solid var(--ink-black);
+	padding: 1rem;
+	background: var(--pure-white);
+}
+
+.composer label {
+	display: block;
+	font-size: .75rem;
+	font-weight: 800;
+	text-transform: uppercase;
+	letter-spacing: .12em;
+	color: var(--slate-gray);
+	margin-bottom: .4rem;
+}
+
+.answer-row {
+	display: flex;
+	gap: .5rem;
+}
+
+.answer-row input {
+	flex: 1;
+	min-width: 0;
+	min-height: 44px;
+	border: 3px solid var(--ink-black);
+	border-radius: 14px;
+	background: var(--soft-gray);
+	padding: .75rem 1rem;
+	font: inherit;
+	font-weight: 700;
+}
+
+.answer-row button {
+	min-height: 44px;
+	border: 3px solid var(--ink-black);
+	border-radius: 14px;
+	background: var(--pizza-red);
+	color: var(--pure-white);
+	font-weight: 800;
+	padding: .7rem 1rem;
+	box-shadow: 3px 3px 0 var(--ink-black);
+}
+
+.chips {
+	display: flex;
+	gap: .5rem;
+	flex-wrap: wrap;
+	margin-bottom: .7rem;
+}
+
+.chip {
+	min-height: 44px;
+	border: 3px solid var(--ink-black);
+	border-radius: 999px;
+	background: var(--soft-gray);
+	padding: .45rem .8rem;
+	font-weight: 800;
+	cursor: pointer;
+}
+
+.reset {
+	min-height: 44px;
+	padding: .5rem 0;
+	border: 0;
+	background: none;
+	text-decoration: underline;
+	color: var(--slate-gray);
+	font-weight: 800;
+	margin-top: .7rem;
+	cursor: pointer;
+}
+
+/* Receipt layout and fallback torn-edge geometry used by the ticket design */
+
+.receipt-wrap {
+	position: sticky;
+	top: 112px;
+}
+
+.receipt {
+	position: relative;
+	filter: drop-shadow(8px 8px 0 var(--receipt-shadow-gray));
+	margin-bottom: 1.5rem;
+}
+
+.receipt-paper {
+	position: relative;
+	z-index: 2;
+	background: var(--pure-white);
+	border-left: 3px solid var(--ink-black);
+	border-right: 3px solid var(--ink-black);
+	padding: 1.5rem;
+	margin-top: -12px;
+	padding-top: calc(1.5rem + 12px);
+}
+
+.torn-svg-top,
+.torn-svg-bottom {
+	display: block;
+	width: 100%;
+	height: 24px;
+	position: relative;
+	z-index: 3;
+	overflow: visible;
+}
+
+.torn-svg-top {
+	margin-bottom: 0;
+}
+
+.torn-svg-bottom {
+	margin-top: -1px;
+}
+
+.torn-svg-fill {
+	fill: var(--pure-white);
+	stroke: none;
+}
+
+.torn-svg-outline {
+	fill: none;
+	stroke: var(--ink-black);
+	stroke-width: 3px;
+	vector-effect: non-scaling-stroke;
+	stroke-linecap: butt;
+	stroke-linejoin: miter;
+}
+
+.torn {
+	height: 24px;
+	position: relative;
+	z-index: 3;
+	background: var(--ink-black);
+}
+
+.torn.top {
+	margin-bottom: -1px;
+	clip-path: polygon(0 100%, 0 50%, 4% 0, 8% 50%, 12% 0, 16% 50%, 20% 0, 24% 50%, 28% 0, 32% 50%, 36% 0, 40% 50%, 44% 0, 48% 50%, 52% 0, 56% 50%, 60% 0, 64% 50%, 68% 0, 72% 50%, 76% 0, 80% 50%, 84% 0, 88% 50%, 92% 0, 96% 50%, 100% 0, 100% 100%);
+}
+
+.torn.bottom {
+	margin-top: -3px;
+	clip-path: polygon(0 0, 100% 0, 100% 50%, 96% 100%, 92% 50%, 88% 100%, 84% 50%, 80% 100%, 76% 50%, 72% 100%, 68% 50%, 64% 100%, 60% 50%, 56% 100%, 52% 50%, 48% 100%, 44% 50%, 40% 100%, 36% 50%, 32% 100%, 28% 50%, 24% 100%, 20% 50%, 16% 100%, 12% 50%, 8% 100%, 4% 50%, 0 100%);
+}
+
+.torn::after {
+	content: "";
+	position: absolute;
+	left: 3px;
+	right: 3px;
+	background: var(--pure-white);
+}
+
+.torn.top::after {
+	top: 5px;
+	bottom: -1px;
+	clip-path: polygon(0 100%, 0 50%, 4% 0, 8% 50%, 12% 0, 16% 50%, 20% 0, 24% 50%, 28% 0, 32% 50%, 36% 0, 40% 50%, 44% 0, 48% 50%, 52% 0, 56% 50%, 60% 0, 64% 50%, 68% 0, 72% 50%, 76% 0, 80% 50%, 84% 0, 88% 50%, 92% 0, 96% 50%, 100% 0, 100% 100%);
+}
+
+.torn.bottom::after {
+	top: -3px;
+	bottom: 5px;
+	clip-path: polygon(0 0, 100% 0, 100% 50%, 96% 100%, 92% 50%, 88% 100%, 84% 50%, 80% 100%, 76% 50%, 72% 100%, 68% 50%, 64% 100%, 60% 50%, 56% 100%, 52% 50%, 48% 100%, 44% 50%, 40% 100%, 36% 50%, 32% 100%, 28% 50%, 24% 100%, 20% 50%, 16% 100%, 12% 50%, 8% 100%, 4% 50%, 0 100%);
+}
+
+.receipt-paper h2 {
+	text-align: center;
+	font-size: 1.55rem;
+	margin: 0;
+}
+
+.receipt-sub {
+	text-align: center;
+	color: var(--slate-gray);
+	font-size: .7rem;
+	font-weight: 800;
+	text-transform: uppercase;
+	letter-spacing: .2em;
+	border-bottom: 3px dashed var(--mist-gray);
+	padding: .35rem 0 1rem;
+}
+
+.receipt-row {
+	display: flex;
+	justify-content: space-between;
+	gap: 1rem;
+	font-size: .9rem;
+	font-weight: 700;
+	margin: .55rem 0;
+}
+
+.receipt-row span:first-child {
+	color: var(--slate-gray);
+}
+
+.receipt-section {
+	border-top: 3px dashed var(--mist-gray);
+	margin-top: 1rem;
+	padding-top: 1rem;
+}
+
+.empty {
+	background: var(--soft-gray);
+	border: 3px dashed var(--mist-gray);
+	border-radius: 12px;
+	text-align: center;
+	color: var(--slate-gray);
+	font-size: .85rem;
+	font-weight: 700;
+	padding: 1.1rem;
+}
+
+.total {
+	display: flex;
+	justify-content: space-between;
+	border-top: 3px solid var(--ink-black);
+	margin-top: 1rem;
+	padding-top: 1rem;
+	font-size: 1.25rem;
+}
+
+.total strong:last-child {
+	color: var(--cherry-red);
+	font-size: 1.5rem;
+}
+
+.receipt-foot {
+	text-align: center;
+	color: var(--slate-gray);
+	font-size: .62rem;
+	font-weight: 800;
+	text-transform: uppercase;
+	letter-spacing: .2em;
+	margin-top: 1.2rem;
+}
+
+.demo-note {
+	color: var(--slate-gray);
+	font-weight: 700;
+	line-height: 1.6;
+	padding: .3rem .4rem;
+}
+
+/* Responsive receipt edge: SVG geometry keeps the paper outline aligned as content grows. */
+
+.receipt {
+	filter: drop-shadow(8px 8px 0 var(--receipt-shadow-gray));
+	margin-bottom: 1.5rem;
+}
+
+.receipt-paper {
+	margin: 0;
+	padding: 1.5rem;
+	position: relative;
+	z-index: 2;
+	background: var(--pure-white);
+	border-left: 3px solid var(--ink-black);
+	border-right: 3px solid var(--ink-black);
+}
+
+.torn-svg {
+	display: block;
+	width: 100%;
+	height: 20px;
+	position: relative;
+	z-index: 3;
+	overflow: visible;
+}
+
+.torn-svg-top {
+	margin-bottom: -1px;
+}
+
+.torn-svg-bottom {
+	margin-top: -1px;
+}
+
+.torn-svg-fill {
+	fill: var(--pure-white);
+	stroke: none;
+}
+
+.torn-svg-outline {
+	fill: none;
+	stroke: var(--ink-black);
+	stroke-width: 3px;
+	vector-effect: non-scaling-stroke;
+	stroke-linecap: butt;
+	stroke-linejoin: miter;
+}
+
+.receipt-pizza {
+	display: flex;
+	justify-content: space-between;
+	gap: 1rem;
+	padding: .7rem 0;
+	border-bottom: 2px dotted var(--mist-gray);
+	font-size: .85rem;
+}
+
+.receipt-pizza-detail {
+	color: var(--slate-gray);
+	font-weight: 700;
+	margin-top: .2rem;
+}
+
+.answer-feedback {
+	min-height: 1.2em;
+	margin-top: .4rem;
+	color: var(--slate-gray);
+	font-size: .8rem;
+	font-weight: 700;
+}
+
+.answer-feedback.error {
+	color: var(--cherry-red);
+}
+
+/* Responsive receipt-paper outline */
+
+.receipt-wrap {
+	position: sticky;
+	top: 112px;
+}
+
+.receipt-paper-frame {
+	position: relative;
+	filter: drop-shadow(8px 8px 0 var(--receipt-shadow-gray));
+}
+
+.receipt-outline {
+	pointer-events: none;
+	position: absolute;
+	inset: 0;
+	width: 100%;
+	height: 100%;
+	overflow: visible;
+	z-index: 1;
+}
+
+.receipt-outline path {
+	fill: var(--receipt-bg);
+	stroke: var(--receipt-outline);
+	stroke-width: 3px;
+	vector-effect: non-scaling-stroke;
+	stroke-linejoin: miter;
+}
+
+.receipt-paper-content {
+	position: relative;
+	z-index: 2;
+	padding: 2.25rem 1.5rem;
+}
+
+.receipt-coupon {
+	margin-top: 1rem;
+	border: 3px solid var(--receipt-outline);
+	border-radius: .75rem;
+	background: var(--receipt-coupon-bg);
+	color: var(--receipt-coupon-text);
+	padding: .75rem 1rem;
+	font-size: .875rem;
+	font-weight: 800;
+	box-shadow: 3px 3px 0 var(--receipt-outline);
+}
+
+.receipt-status {
+	margin-top: 1rem;
+	border: 3px solid var(--receipt-outline);
+	border-radius: .75rem;
+	background: var(--receipt-status-bg);
+	color: var(--receipt-status-text);
+	padding: .75rem 1rem;
+	font-size: .875rem;
+	font-weight: 700;
+}
+
+.answer-complete {
+	font-weight: 800;
+	color: var(--slate-gray);
+}
+
+/* Receipt colors stay token-backed here so the paper treatment can vary without inline color values. */
+:root {
+	--receipt-bg: var(--pure-white);
+	--receipt-outline: var(--ink-black);
+	--receipt-shadow: var(--haze-gray);
+	--receipt-heading: var(--ink-black);
+	--receipt-label: var(--slate-gray);
+	--receipt-value: var(--ink-black);
+	--receipt-price: var(--cherry-red);
+	--receipt-total: var(--cherry-red);
+	--receipt-divider: var(--mist-gray);
+	--receipt-empty-bg: var(--soft-gray);
+	--receipt-empty-text: var(--slate-gray);
+	--receipt-coupon-bg: var(--pizza-yellow);
+	--receipt-coupon-text: var(--ink-black);
+	--receipt-status-bg: var(--herb-green);
+	--receipt-status-text: var(--pure-white);
+	--receipt-status-label: var(--pure-white);
+	--receipt-footnote: var(--slate-gray);
+}
+
+/* The SVG supplies only the outline; the paper fill stays white so content never sits on a dark fallback. */
+
+.receipt-paper-frame {
+	background: transparent;
+}
+
+.receipt-outline path {
+	fill: var(--receipt-bg);
+	stroke: var(--receipt-outline);
+	stroke-width: 3px;
+	stroke-linejoin: miter;
+	stroke-miterlimit: 8;
+}
+
+.order-grid {
+	grid-template-columns: minmax(0, 1fr) 380px;
+	gap: 2rem;
+	padding: 3.5rem 0;
+}
+
+.chat-card {
+	min-height: 720px;
+}
+
+.chat-head {
+	padding: 1rem 1.5rem;
+}
+
+.thread {
+	min-height: 500px;
+	padding: 1.5rem;
+}
+
+.bubble {
+	max-width: 78%;
+	box-shadow: 3px 3px 0 var(--ink-black);
+}
+
+.bubble.user {
+	margin-left: auto;
+}
+
+.composer {
+	padding: 1rem 1.5rem;
+}
+
+.composer label {
+	color: var(--ink-black);
+	font-size: .95rem;
+	text-transform: none;
+	letter-spacing: 0;
+	margin-bottom: .75rem;
+}
+
+
+.answer-row input {
+	background: var(--soft-gray);
+}
+
+.receipt-wrap {
+	position: sticky;
+	top: 112px;
+}
+
+.receipt-paper-frame {
+	position: relative;
+	background: transparent;
+	filter: drop-shadow(6px 7px 0 var(--receipt-shadow-gray));
+}
+
+.receipt-outline {
+	position: absolute;
+	inset: 0;
+	width: 100%;
+	height: 100%;
+	display: block;
+	overflow: visible;
+	z-index: 1;
+	filter: none;
+}
+
+.receipt-outline > path,
+.receipt-outline path {
+	fill: var(--pure-white) !important;
+	stroke: var(--ink-black) !important;
+	stroke-width: 3px;
+	stroke-linejoin: miter;
+	stroke-miterlimit: 8;
+	vector-effect: non-scaling-stroke;
+}
+
+.receipt-paper-content {
+	position: relative;
+	z-index: 2;
+	padding: 2.25rem 1.5rem;
+}
+
+.receipt-paper-content h2 {
+	color: var(--ink-black);
+}
+
+.receipt-sub {
+	color: var(--slate-gray);
+}
+
+/* Order-page responsive layout */
+
+@media (max-width: 1023px) {
+	.order-intro-grid,
+	.order-grid {
+		grid-template-columns: 1fr;
+	}
+	.hero-img {
+		display: none;
+	}
+	.receipt-wrap {
+		position: static;
+	}
+	.chat-card {
+		min-height: 580px;
+	}
+	.thread {
+		min-height: 360px;
+	}
+}
+
+@media (max-width: 600px) {
+	.logo-hero-inner {
+		padding: 1.5rem 1rem 1.75rem;
+	}
+	.logo-hero-image {
+		width: min(86vw, 370px);
+		max-height: none;
+		filter: drop-shadow(4px 5px 0 var(--fog-gray));
+	}
+	.logo-hero-title {
+		width: min(94%, 420px);
+	}
+	.order-intro-grid {
+		padding: 2.4rem 0 3rem;
+	}
+	.order-intro h2 {
+		font-size: 2.45rem;
+	}
+	.order-intro p {
+		font-size: 1rem;
+	}
+	.order-grid {
+		padding: 3.5rem 0 2.5rem;
+	}
+	.thread {
+		padding: 1.25rem;
+	}
+	.bubble {
+		max-width: 84%;
+	}
+	.composer {
+		padding: 1rem;
+	}
+	.composer label {
+		font-size: .8rem;
+	}
+	.answer-row {
+		flex-direction: row;
+	}
+	.answer-row button {
+		flex: 0 0 auto;
+	}
+	.receipt-paper-content {
+		padding: 2.25rem 1.25rem;
+	}
+}
+
+
+@media (max-width: 420px) {
+	.answer-row {
+		flex-direction: column;
+	}
+
+	.answer-row button {
+		width: 100%;
+	}
+
+	.bubble {
+		max-width: 92%;
+	}
+}

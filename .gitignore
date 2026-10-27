@@ -1,0 +1,24 @@
+# +----------------------------------------------------------------------------+
+# | Pizza Ordering Chatbot                                                     |
+# | Purpose: Excludes local Python, Visual Studio, and operating-system        |
+# | development artifacts from the authentic original project workspace.       |
+# | Author: Alysha Pursley                                                     |
+# | Copyright (c) 2026 Alysha Pursley.                                         |
+# +----------------------------------------------------------------------------+
+.vs/
+Debug/
+Release/
+x64/
+x86/
+__pycache__/
+*.py[cod]
+*.exe
+*.obj
+*.pdb
+*.ilk
+*.tlog
+.DS_Store
+Thumbs.db
+*.log
+.vscode/
+.idea/

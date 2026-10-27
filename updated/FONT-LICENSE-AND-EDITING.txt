@@ -1,0 +1,4 @@
+The Pizza Planet name is editable text, styled in src/styles/brand-fonts.css.
+Change the shared name in src/data/site.js; hero title in src/components/order/OrderHero.js.
+The tagline retains its original CSS font.
+Review the supplied font license before publishing or redistributing this website.

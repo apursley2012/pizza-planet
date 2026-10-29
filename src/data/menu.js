@@ -34,22 +34,22 @@ export const CRUST_MENU = [
 	{
 		name: 'Thin',
 		description: 'Cracker-crisp, docked and stretched by hand.',
-		price: 'No charge'
+		price: 'No additional charge'
 	},
 	{
 		name: 'Thick',
 		description: 'Airy, chewy, slow-proofed 48 hours.',
-		price: 'No charge'
+		price: 'No additional charge'
 	},
 	{
 		name: 'Pan',
 		description: 'Buttered steel pan, fried-golden edges.',
-		price: 'No charge'
+		price: '+$2.50'
 	},
 	{
 		name: 'Deep dish',
 		description: 'Chicago-style wall of crust and cheese.',
-		price: 'No charge'
+		price: '+$5.00'
 	}
 ];
 
@@ -78,7 +78,6 @@ export const MENU_SECTIONS = [
 	{
 		id: 'sides',
 		title: 'Sides',
-		blurb: 'Everything comes out of the same oven.',
 		items: [
 			{
 				name: 'Garlic knots',
@@ -105,7 +104,6 @@ export const MENU_SECTIONS = [
 	{
 		id: 'drinks',
 		title: 'Drinks',
-		blurb: 'Cold cases by the register.',
 		items: [
 			{
 				name: 'Bottled soda',
@@ -132,7 +130,6 @@ export const MENU_SECTIONS = [
 	{
 		id: 'sweets',
 		title: 'Sweets',
-		blurb: 'If there’s any left by closing.',
 		items: [
 			{
 				name: 'Cannoli',

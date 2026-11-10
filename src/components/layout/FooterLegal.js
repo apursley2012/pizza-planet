@@ -11,13 +11,8 @@
 export default function render() {
 	return `
 		<div class="legal">
-			<span> 
-				Pizza Planet Order Chatbot. © 2026 Alysha Pursley. All Rights Reserved 
-			</span>
-			
-			<span> 
+				Pizza Planet Order Chatbot. © 2026 Alysha Pursley. All Rights Reserved. <br>
 				Demo site — no real orders, kitchen, or payments. Card fields are for demonstration only. 
-			</span>
 		</div>
 	`;
 }

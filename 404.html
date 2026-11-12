@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<!--
+  +----------------------------------------------------------------------------+
+  | Pizza Planet Ordering Chatbot                                              |
+  | Purpose: Provides a branded, responsive 404 page.                          |
+  | Author: Alysha Pursley                                                     |
+  | Copyright (c) 2026 Alysha Pursley.                                         |
+  | Rights: Proprietary; see LICENSE                                           |
+  +----------------------------------------------------------------------------+
+-->
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1" />
+		<meta
+			name="robots"
+			content="noindex" />
+		<title>Page Not Found | Pizza Planet</title>
+		<link
+			rel="stylesheet"
+			href="./src/styles/shared.css" />
+		<link
+			rel="stylesheet"
+			href="./src/styles/not-found.css" />
+	</head>
+	<body>
+		<a
+			class="skip-link"
+			href="#main-content">
+			Skip to main content
+		</a>
+		<header class="site-header">
+			<div class="container header-inner">
+				<a
+					class="brand"
+					href="./pages/order.html"
+					aria-label="Pizza Planet home">
+					<img
+						class="brand-logo"
+						src="./public/pizza-planet-logo.png"
+						alt=""
+						width="64"
+						height="64" />
+					<span class="brand-copy">
+						<span class="brand-name">Pizza Planet</span>
+						<span class="brand-tag">Out of this world</span>
+					</span>
+				</a>
+				<nav
+					class="nav"
+					aria-label="Primary">
+					<a href="./pages/order.html">Order</a>
+					<a href="./pages/menu.html">Menu</a>
+					<a href="./pages/story.html">Our Story</a>
+					<a href="./pages/visit.html">Visit</a>
+				</nav>
+				<a
+					class="phone"
+					href="tel:3125550184">
+					(312) 555-0184
+				</a>
+				<details class="not-found-mobile-menu">
+					<summary aria-label="Open navigation menu">
+						☰
+						<span class="visually-hidden">Menu</span>
+					</summary>
+					<nav aria-label="Mobile primary">
+						<a href="./pages/order.html">Order</a>
+						<a href="./pages/menu.html">Menu</a>
+						<a href="./pages/story.html">Our Story</a>
+						<a href="./pages/visit.html">Visit</a>
+					</nav>
+				</details>
+			</div>
+			<div
+				class="checker"
+				aria-hidden="true"></div>
+		</header>
+		<main
+			class="not-found"
+			id="main-content">
+			<div class="not-found__content">
+				<p class="eyebrow">Houston, we have a missing page</p>
+				<p
+					class="not-found__code"
+					aria-label="Error 404">
+					404
+				</p>
+				<h1 class="display not-found__title">Lost in space?</h1>
+				<p class="not-found__description">
+					Looks like this page drifted out of orbit. Our pizza is
+					still right where you left it.
+				</p>
+				<a
+					class="btn btn-yellow"
+					href="./pages/order.html">
+					Back to ordering
+				</a>
+			</div>
+		</main>
+		<footer class="site-footer">
+			<div class="container footer-grid">
+				<div class="footer-brand-block">
+					<div class="footer-brand-lockup">
+						<span class="footer-logo-box">
+							<img
+								src="./public/pizza-planet-logo.png"
+								alt=""
+								width="64"
+								height="64" />
+						</span>
+						<div>
+							<p class="footer-brand">Pizza Planet</p>
+							<p class="footer-tagline">
+								Out of this world
+							</p>
+						</div>
+					</div>
+					<p class="footer-blurb">
+						One oven, four crusts, and a counter that’s been
+						taking orders the same way since 1974.
+					</p>
+					<a
+						class="btn btn-yellow footer-order-btn"
+						href="./pages/order.html">
+						Start an order
+					</a>
+				</div>
+				<div>
+					<h2>Find us</h2>
+					<ul>
+						<li>1974 W. Grand Ave, Chicago, IL 60622</li>
+						<li>
+							<a href="tel:3125550184">(312) 555-0184</a>
+						</li>
+					</ul>
+				</div>
+				<div>
+					<h2>Hours</h2>
+					<ul>
+						<li>
+							<b>Monday</b>
+							<br />
+							Closed — dough day
+						</li>
+						<li>
+							<b>Tuesday – Thursday</b>
+							<br />
+							11:00 am – 10:00 pm
+						</li>
+						<li>
+							<b>Friday – Saturday</b>
+							<br />
+							11:00 am – midnight
+						</li>
+						<li>
+							<b>Sunday</b>
+							<br />
+							12:00 pm – 9:00 pm
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="legal">
+				Demo site — no real orders, kitchen, or payments. Card
+				fields are for demonstration only.
+			</div>
+		</footer>
+	</body>
+</html>

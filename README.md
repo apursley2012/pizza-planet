@@ -24,23 +24,22 @@ Date: August 2026
 ---
  
 ## Table of Contents 📖
- 
 *   [Project Overview 🔎](#project-overview)
-   *   [Purpose 🎯](#purpose)
-   *   [Design Style and Inspiration 🎨](#design-style-and-inspiration)
-   *   [Main Color Palette 🌈](#main-color-palette)
-   *   [Preview Screenshots 🖼️](#preview-screenshots)
+    *   [Purpose 🎯](#purpose)
+    *   [Design Style and Inspiration 🎨](#design-style-and-inspiration)
+    *   [Main Color Palette 🌈](#main-color-palette)
+    *   [Preview Screenshots 🖼️](#preview-screenshots)
 *   [Key Features ✨](#key-features)
 *   [Tech Stack 🛠️](#tech-stack)
 *   [Live Demo 🚀](#live-demo)
 *   [Installation 📦](#installation)
-   *   [Local Use 💻](#local-use)
-   *   [GitHub Pages Deployment 🌐](#github-pages-deployment)
+    *   [Local Use 💻](#local-use)
+    *   [GitHub Pages Deployment 🌐](#github-pages-deployment)
 *   [Usage 🧭](#usage)
 *   [Project Structure 🗂️](#project-structure)
-   *   [Pages Included 📄](#pages-included)
-   *   [Core Files and Architecture 🧩](#core-files-and-architecture)
-   *   [File and Folder Structure 🌳](#file-and-folder-structure)
+    *   [Pages Included 📄](#pages-included)
+    *   [Core Files and Architecture 🧩](#core-files-and-architecture)
+    *   [File and Folder Structure 🌳](#file-and-folder-structure)
 *   [Ordering Model 🧮](#ordering-model)
 *   [Customization Guide 🎨](#customization-guide)
 *   [Accessibility and Browser Compatibility ♿](#accessibility-and-browser-compatibility)
@@ -48,11 +47,11 @@ Date: August 2026
 *   [Project Scope and Limitations 📌](#project-scope-and-limitations)
 *   [Possible Future Enhancements 💡](#possible-future-enhancements)
 *   [Contributing 🤝](#contributing)
-   *   [Reporting Issues 🐛](#reporting-issues)
-   *   [Requesting Additions 📝](#requesting-additions)
+    *   [Reporting Issues 🐛](#reporting-issues)
+    *   [Requesting Additions 📝](#requesting-additions)
 *   [License 📜](#license)
 *   [Important Links 🔗](#important-links)
-*   [Attribution ℹ️](#attribution)
+*   [Attribution ℹ️️](#attribution)
  
 ---
  

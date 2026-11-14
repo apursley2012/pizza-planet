@@ -11,9 +11,32 @@ Date: August 2026
  
 <h1>Pizza Planet: A Pizza Ordering Chatbot Demo 🍕</h1>
  
-<p><a href="https://github.com/apursley2012/pizza-planet/stargazers"><img src="https://img.shields.io/github/stars/apursley2012/pizza-planet?style=for-the-badge&amp;label=Stars" alt="Stars"></a> <a href="https://github.com/apursley2012/pizza-planet/forks"><img src="https://img.shields.io/github/forks/apursley2012/pizza-planet?style=for-the-badge&amp;label=Forks" alt="Forks"></a> <a href="https://github.com/apursley2012/pizza-planet/issues"><img src="https://img.shields.io/github/issues/apursley2012/pizza-planet?style=for-the-badge&amp;label=Issues" alt="Issues"></a> <a href="https://github.com/apursley2012/pizza-planet/commits"><img src="https://img.shields.io/github/last-commit/apursley2012/pizza-planet?style=for-the-badge&amp;label=Last%20Commit" alt="Last Commit"></a> <a href="https://github.com/apursley2012/pizza-planet"><img src="https://img.shields.io/github/repo-size/apursley2012/pizza-planet?style=for-the-badge&amp;label=Repo%20Size" alt="Repo Size"></a> <a href="https://github.com/apursley2012/pizza-planet"><img src="https://img.shields.io/github/languages/top/apursley2012/pizza-planet?style=for-the-badge&amp;label=Top%20Language" alt="Top Language"></a> <a href="https://github.com/apursley2012/pizza-planet"><img src="https://img.shields.io/github/languages/count/apursley2012/pizza-planet?style=for-the-badge&amp;label=Languages" alt="Languages"></a> <a href="https://github.com/apursley2012/pizza-planet/graphs/contributors"><img src="https://img.shields.io/github/contributors/apursley2012/pizza-planet?style=for-the-badge&amp;label=Contributors" alt="Contributors"></a> <a href="https://github.com/apursley2012/pizza-planet/graphs/commit-activity"><img src="https://img.shields.io/github/commit-activity/m/apursley2012/pizza-planet?style=for-the-badge&amp;label=Monthly%20Commits" alt="Monthly Commits"></a> </p>
+<p>
+ <a href="https://github.com/apursley2012/pizza-planet/stargazers">
+  <img src="https://img.shields.io/github/stars/apursley2012/pizza-planet?style=for-the-badge&amp;label=Stars" alt="Stars"></a> 
+ <a href="https://github.com/apursley2012/pizza-planet/forks">
+  <img src="https://img.shields.io/github/forks/apursley2012/pizza-planet?style=for-the-badge&amp;label=Forks" alt="Forks"></a> 
+ <a href="https://github.com/apursley2012/pizza-planet/issues">
+  <img src="https://img.shields.io/github/issues/apursley2012/pizza-planet?style=for-the-badge&amp;label=Issues" alt="Issues"></a>
+ <a href="https://github.com/apursley2012/pizza-planet/commits">
+  <img src="https://img.shields.io/github/last-commit/apursley2012/pizza-planet?style=for-the-badge&amp;label=Last%20Commit" alt="Last Commit"></a>
+ <a href="https://github.com/apursley2012/pizza-planet">
+  <img src="https://img.shields.io/github/repo-size/apursley2012/pizza-planet?style=for-the-badge&amp;label=Repo%20Size" alt="Repo Size"></a> 
+ <a href="https://github.com/apursley2012/pizza-planet">
+  <img src="https://img.shields.io/github/languages/top/apursley2012/pizza-planet?style=for-the-badge&amp;label=Top%20Language" alt="Top Language"></a>
+ <a href="https://github.com/apursley2012/pizza-planet">
+  <img src="https://img.shields.io/github/languages/count/apursley2012/pizza-planet?style=for-the-badge&amp;label=Languages" alt="Languages"></a>
+ <a href="https://github.com/apursley2012/pizza-planet/graphs/contributors">
+  <img src="https://img.shields.io/github/contributors/apursley2012/pizza-planet?style=for-the-badge&amp;label=Contributors" alt="Contributors"></a> 
+ <a href="https://github.com/apursley2012/pizza-planet/graphs/commit-activity">
+  <img src="https://img.shields.io/github/commit-activity/m/apursley2012/pizza-planet?style=for-the-badge&amp;label=Monthly%20Commits" alt="Monthly Commits"></a> 
+</p>
  
-<p><a href="https://apursley2012.github.io/pizza-planet/"><img src="https://img.shields.io/badge/Live%20Demo-GitHub%20Pages-222222?style=for-the-badge&amp;logo=githubpages&amp;logoColor=white" alt="Live Demo"></a> <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&amp;logo=html5&amp;logoColor=white" alt="HTML5"> <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&amp;logo=css3&amp;logoColor=white" alt="CSS3"> <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&amp;logo=javascript&amp;logoColor=black" alt="JavaScript"></p>
+<p>
+ <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&amp;logo=html5&amp;logoColor=white" alt="HTML5"> 
+ <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&amp;logo=css3&amp;logoColor=white" alt="CSS3"> 
+ <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&amp;logo=javascript&amp;logoColor=black" alt="JavaScript">
+</p>
  
 <p><strong>A conversational pizza-ordering application that guides customers through an order one decision at a time while maintaining a live receipt with pizzas, quantities, tax, delivery fees, payment choices, tips, and the final total.</strong></p>
  

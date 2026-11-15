@@ -153,7 +153,7 @@ The palette below comes directly from `src/styles/shared.css`. I included the na
 <details open>
 <summary><h3><strong>Preview Screenshots 🖼️</strong></h3></summary>
  
-I have not linked to screenshots that are not verified in the current project. Screenshots can be added once actual captures of the finished site are available.
+
  
 </details>
  

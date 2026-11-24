@@ -7,7 +7,7 @@ Date: August 2026
  
 <div align="center">
  
-<img src="./public/pizza-planet-logo.png" alt="Pizza Planet Logo" width="auto" height="512px">
+<img src="./public/pizza-planet-logo.png" alt="Pizza Planet Logo" width="512px" height="auto">
  
 <h1>Pizza Planet: A Pizza Ordering Chatbot Demo 🍕</h1>
  
